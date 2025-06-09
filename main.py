@@ -6,5 +6,3 @@ while True:
         print(f"Ошибка: {e} Введено не число. Попробуйте снова.")
         continue
 
-def hello(name):  print(f"Hello {name} + num1 + num2")
-
