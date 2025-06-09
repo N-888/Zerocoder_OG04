@@ -6,3 +6,14 @@ while True:
         print(f"Ошибка: {e} Введено не число. Попробуйте снова.")
         continue
 
+    op = input("Выберите операцию (+, -, *, /) или 'q' для выхода: ")
+        if op.lower() == 'q':
+            break
+        if op == "+":
+            result = num1 + num2
+        elif op == "-":
+            result = num1 - num2
+        elif op == "*":
+            result = num1 * num2
+        elif op == "/":
+            
