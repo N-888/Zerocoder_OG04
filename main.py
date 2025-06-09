@@ -6,3 +6,5 @@ while True:
         print(f"Ошибка: {e} Введено не число. Внимательно Попробуйте снова.")
         continue
 
+def hello(name):
+    print(f"Hello {name}")
