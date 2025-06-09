@@ -16,4 +16,9 @@ while True:
         elif op == "*":
             result = num1 * num2
         elif op == "/":
-            
+            try:
+                result = num1 / num2
+
+            continue
+
+        print(f"Результат: {num1} {op} {num2} = {result}")
