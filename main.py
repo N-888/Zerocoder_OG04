@@ -6,11 +6,7 @@ while True:
         print(f"Ошибка: {e} Введено не число. Попробуйте снова.")
         continue
 
-            except ZeroDivisionError:
-            print("Ошибка: Деление на ноль невозможно! Попробуйте снова.")
-            continue
-    else:
-        print("Ошибка: Недопустимая Операция! Попробуйте снова.") op = input("Выберите операцию (+, -, *, /) или 'q' для выхода: ")
+    op = input("Выберите операцию (+, -, *, /) или 'q' для выхода: ")
     if op.lower() == 'q':
         break
     if op == "+":
@@ -22,7 +18,11 @@ while True:
     elif op == "/":
         try:
             result = num1 / num2
-
+        except ZeroDivisionError:
+            print("Ошибка: Деление на ноль невозможно! Попробуйте снова.")
+            continue
+    else:
+        print("Ошибка: Недопустимая Операция! Попробуйте снова.")
         continue
 
     print(f"Результат: {num1} {op} {num2} = {result}")
